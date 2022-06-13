@@ -10,7 +10,7 @@ body {
 
 h2 {
     font-family: 'Oswald', sans-serif;
-    font-size: 30px;
+    font-size: 1.875rem;
     margin: 0px;
 }
 
@@ -20,21 +20,12 @@ p {
 }
 
 a {
-    text-decoration: none;
-}
-
-.header{
-    grid-area: header;
+    font-size: 1.25rem;
 }
 
 .headerPaginas {
     font-family: 'Oswald', sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 30px;
-    text-align: center;
+    font-size: 1.25rem;
     color: rgb(0, 0, 0);
 }
 
@@ -42,39 +33,15 @@ a {
 .headerIndex {
     background-image: url(../assets/imagenes/argenplas1.jpg);
     height: 250px;
+    width: cover;
 }
 
 .tituloPrincipal {
     font-family: 'Oswald', sans-serif;
-    font-size: 75px;
+    font-size: clamp(40px,4vw,75px);
     color: rgb(220, 247, 220);
 }
 
-
-.containerUno{ 
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "header"
-        "nav"
-        "h2"
-        "parrafo"
-        "beneficiosUno"
-        "beneficiosDos"
-        "gente"
-        "cartasTipoCliente"
-        "footer";
-}
-
-.nav {
-    grid-area: nav;
-    padding: 2%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    
-}
 
 .colorNav {
     background-color: rgba(101, 231, 231, 0.555);
@@ -82,7 +49,7 @@ a {
 
 .estiloLiNav {
     font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .h2 {
@@ -94,44 +61,31 @@ a {
 .parrafo {
     grid-area: parrafo;
     padding: 3%;
-    font-size: 25px;
-}
-
-.gente {
-    grid-area: gente;
-    padding: 5%;
+    font-size: 1.563rem;
 }
 
 .imagenCompras {
-    width: 300px;
-    height: 250px;
-}
-
-.beneficiosUno {
-    grid-area: beneficiosUno;
-    padding: 2%;
-}
-
-.beneficiosDos {
-    grid-area: beneficiosDos;
-    padding: 2%;
-}
-.cartasTipoCliente {
-    grid-area: cartasTipoCliente;
-    padding: 5%;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5%;
 }
 
 .card-img, .card-img-bottom, .card-img-top {
     width: 50px;
 }
 
-.imagenDeCard {
-    margin: 5px 0px;
+.margenDeCards {
+    margin: 0.313em 0;
+}
+
+.paddingBotones {
+    display: block;
+    padding: 0.5em 0.5em;
 }
 
 .footer {
     grid-area: footer;
-    font-size: 20px;
+    font-size: 1.25rem;
     background-color: rgb(231, 59, 59);
 }
 
@@ -139,22 +93,6 @@ a {
     margin: 1% 2%;
 }
 
-.navDeProductos {
-    grid-area: navDeProductos;
-}
-
-
-.containerDos {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "header"
-        "nav"
-        "parrafo"
-        "video"
-        "footer";
-}
 
 .videoCables {
     grid-area: video;
@@ -166,18 +104,6 @@ iframe {
     margin: 2%;
 }
 
-.containerTres {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "header"
-    "nav"
-    "h2"
-    "parrafo"
-    "navDeProductos"
-    "footer";
-}
 
 .imgCardProductos {
     width: 100%;
@@ -192,7 +118,16 @@ iframe {
     transition: all 0.5s;
 }
 
-.navDeProductos {
-    grid-area: navDeProductos;
+.sinMargenes {
+    margin: 0;
+    padding: 0;
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+}
+
+@media screen and (max-width: 480px){  
+    iframe {
+        width: 80%;
+    }
 }
 
