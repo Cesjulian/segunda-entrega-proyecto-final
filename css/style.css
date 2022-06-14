@@ -89,11 +89,6 @@ a {
     background-color: rgb(231, 59, 59);
 }
 
-.divsDelFooter {
-    padding: 1% 2%;
-}
-
-
 .videoCables {
     grid-area: video;
     width: 50%;
