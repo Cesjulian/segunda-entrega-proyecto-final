@@ -75,7 +75,7 @@ a {
 }
 
 .margenDeCards {
-    margin: 0.313em 0;
+    margin: 0.5em 0;
 }
 
 .paddingBotones {
@@ -90,7 +90,7 @@ a {
 }
 
 .divsDelFooter {
-    margin: 1% 2%;
+    padding: 1% 2%;
 }
 
 
@@ -110,7 +110,7 @@ iframe {
 }
 
 .paddingCardProductos {
-    padding: 2%;
+    margin: 2%;
 }
 
 .botonesAnimados:hover{
